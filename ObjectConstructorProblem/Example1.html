@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object Constructor</title>
+    <script>
+
+        function Person(name,age,gender)
+        {
+
+
+            this.name=name;
+            this.age=age;
+            this.gender=gender;
+
+            this.sayHello=function()
+            {
+
+
+                document.write("Hello my name is :"+this.name+
+                "<br>");
+
+            }
+
+        }
+
+        var john=new Person("John",30,"Male");
+        var johny=new Person("Ridam",20,"Female");
+
+        document.write(john.name);
+        document.write(johny.name);
+
+        john.sayHello();
+        johny.sayHello();
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let choice;
+        let str;
+        let month;
+        month=prompt("Enter month ","type here");
+        if(isNaN(month))
+        {
+
+            document.write("Given input is not a number");
+        }
+        switch(month)
+        {
+
+
+            case "1":
+            case "2":
+            case "11": 
+            case "12":
+                str="winter";
+                break;
+
+            case "3":
+            case "4": 
+            case "5":
+            case "6":
+                str="Summer";
+                break;
+
+                case "7":
+                case "8":
+                 case "9":
+                 case "10":
+                    str="Rainy";
+                    break;
+
+                    default:
+                        str="wrong input";
+
+
+        }
+        document.write(`${str}`);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

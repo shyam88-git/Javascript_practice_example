@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <script>
+
+        function changecolor(x){
+
+        let clr=x.nextSibling.nodeValue.trim();
+        // next Sibling is used to go to the next element of the html element.Sibling
+        // noveVale return the text of those next sibling.Sibling
+        // trim is used to remove white space.
+        switch(clr){
+
+            case 'red':
+                document.body.bgColor="red";
+                break;
+
+            case 'yellow':
+                document.body.bgColor="yellow";
+                break;
+
+            case "green":
+                document.body.bgColor="green";
+                break;
+
+                
+        }
+
+        
+
+       
+          
+
+        }
+
+    </script>
+</head>
+<body>
+   <input type="radio" name="r1" onclick="changecolor(this)"/> red
+   <input type="radio" name="r1" onclick="changecolor(this)"/> yellow
+   <input type="radio" name="r1" onclick="changecolor(this)"/> green
+    
+
+</body>
+</html>

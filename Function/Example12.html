@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let x=1;
+        function printnos()
+        {
+
+            document.write(`${x}<br>`);
+            x++;
+            if(x==11)
+            {
+
+                clearInterval(y);
+                document.write("Done");
+            }
+
+        }
+
+        let y=setInterval(printnos,2000);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

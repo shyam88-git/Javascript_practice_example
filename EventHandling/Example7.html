@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <script>
+
+        function choose(x){
+
+               
+            switch(x.nextSibling.nodeValue.trim()){
+
+                    case 'Facebook': 
+                     
+                        // document.body.bgColor="red";
+                        return 'https://www.facebook.com';
+                        break;
+
+                    case 'Google':
+                        document.body.bgColor="yellow";
+                        break;        
+
+            }
+
+
+           
+       
+          
+
+        }
+
+    </script>
+</head>
+<body>
+   <input type="radio" name="r1" onclick="choose(this)"/> Facebook
+   <input type="radio" name="r1" onclick="choose(this)"/> Google
+   <br>
+
+   <!-- <button onclick="choose(this)">Go to selected site</button>
+   -->
+
+</body>
+</html>

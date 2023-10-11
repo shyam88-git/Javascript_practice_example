@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+
+        var a=10;
+        function f1()
+        {
+            var a=20;
+
+            alert(" in f1 a is "+a);
+            alert("in f1 global a is"+window.a);
+        }
+
+
+        function f2()
+        {
+
+            alert("in f2 a is "+a);
+        }
+    </script>
+</head>
+<body>
+    To call f1 <a href="Javascript:f1()">Click</a>here <br>
+
+    To call f2<a href="Javascript:f2()">Cick</a>here<br>
+
+</body>
+</html>

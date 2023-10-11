@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insert an Element at a Specific Position in an Array</title>
+    <script>
+
+        let arr=[10,20,30,50,60];
+
+        arr.splice(3,0,40);
+        //first argument is the index which we want to start inserting index
+        //second argument is the number of element we want to remove.
+        //third arguemnt is the which we want to insert.
+        for(let x of arr)
+        {
+
+            document.write(x +"<br>");
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
